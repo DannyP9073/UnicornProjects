@@ -12,4 +12,4 @@ Here are some of the things I have created!
 ### Web applications
 - Guchu Systems an eommerce website (php, javascript, html, css), built in 2021.
 - Tasty Cakes an ecommerce website (php, javascript, html, css), built in 2021.
-- Simoes Stoneworks (html, css, javascript) ongoing development, started in 2023.
+- Simoes Stoneworks (html, css, javascript) ongoing development, started in 2023.[https://simoes-stoneworks.web.app]
