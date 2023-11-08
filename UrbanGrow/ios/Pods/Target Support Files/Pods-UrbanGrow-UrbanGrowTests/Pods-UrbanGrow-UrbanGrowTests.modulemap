@@ -1,0 +1,6 @@
+framework module Pods_UrbanGrow_UrbanGrowTests {
+  umbrella header "Pods-UrbanGrow-UrbanGrowTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
