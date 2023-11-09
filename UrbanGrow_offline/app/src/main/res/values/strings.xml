@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UrbanGrow</string>
+    <string name="view_crop">View All Crops</string>
+    <string name="new_crop">Add New Crop</string>
+</resources>
