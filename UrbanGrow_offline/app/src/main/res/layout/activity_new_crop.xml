@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context=".NewCropActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="New Crop"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:fontFamily="serif-monospace" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/text_field_outlined"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Crop Name:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtPlant"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/text_field_outlined"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:hint="Plant Type:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtNoSeeds"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/text_field_outlined"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:hint="Number of Seeds Planted:"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/text_field_outlined"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:hint="Date Planted:"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:background="@drawable/round_button"
+            android:src="@android:drawable/ic_menu_save"
+            android:layout_marginLeft="80dp" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/round_button"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_marginRight="80dp" />
+    </LinearLayout>
+
+</LinearLayout>

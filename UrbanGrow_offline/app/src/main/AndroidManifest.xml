@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.co.ogma.danieldossantos.urbangrow">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ViewEntryActivity"
+            android:theme="@style/SunActivityTheme"/>
+        <activity
+            android:name=".AddNewCropEntryActivity"
+            android:theme="@style/AddEntryTheme" />
+        <activity
+            android:name=".ViewCropEntriesActivity"
+            android:parentActivityName=".ViewCropActivity"
+            android:theme="@style/SunActivityTheme" />
+        <activity
+            android:name=".UpdateCropActivity"
+            android:parentActivityName=".ViewCropEntriesActivity"
+            android:theme="@style/SunActivityTheme" />
+        <activity
+            android:name=".ViewCropActivity"
+            android:parentActivityName=".MyCropsActivity"
+            android:theme="@style/SunActivityTheme" />
+        <activity
+            android:name=".MyCropsActivity"
+            android:label="@string/view_crop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SunActivityTheme" />
+        <activity
+            android:name=".NewCropActivity"
+            android:label="@string/new_crop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AddEntryTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
